@@ -14,14 +14,28 @@
 			}
 		}
 		.upload_image {
-			display: none;
-			border: none;
-			p {
-				display: none;
+			align-items: center;
+			justify-content: right;
+			flex-direction: column;		
+			top: -20px;
+			border: 2px dashed transparent;
+			height: 52px;
+			margin-bottom: 0px;
+			&:hover {
+				background-color: transparent;
 			}
-		}
-		.upload_image__close {
-			display: block;
+			&:active {
+				background-color: transparent;
+			}
+			p {
+				opacity: 0;
+			}
+			&:hover img{
+				filter: brightness(80%);
+			}
+			&:active img{
+				filter: brightness(60%);
+			}
 		}
 		.color-mode {
 			display: none;
@@ -35,7 +49,7 @@
 		max-width: calc(100% - 96px) !important;
 	}
 	.main {
-		max-width: calc(100% - 73px);
+		max-width: calc(100% - 96px);
 		left: 96px !important;
 	}
 }

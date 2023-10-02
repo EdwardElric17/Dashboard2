@@ -146,55 +146,6 @@
 	flex-direction: column;
 	align-items: center;
 }
-.upload_image__close {
-	display: none;
-	margin-bottom: 25px;
-	border-radius: 10%;
-	cursor: pointer;
-
-	&:hover {
-		filter: brightness(80%);
-	}
-	&:active {
-		filter: brightness(60%);
-	}
-}
-.upload_image {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	flex-direction: column;
-	height: 172px;
-	width: 100%;
-	margin-bottom: 30px;
-	border: 2px dashed var(--basic);
-	border-radius: 15px;
-	cursor: pointer;
-	overflow: hidden;
-	transition: all 0.3s;
-	img {
-		border-radius: 50%;
-		transition: all 0.3s;
-	}
-	p {
-		white-space: nowrap;
-		color: var(--basic);
-		transition: all 0.3s;
-		&:nth-child(3) {
-			margin-top: 3px;
-			font-size: 12px;
-		}
-		&:nth-child(2) {
-			margin-top: 18px;
-		}
-	}
-	&:hover {
-		background-color: var(--block-hover_color);
-	}
-	&:active {
-		background-color: var(--block-active_color);
-	}
-}
 .color-mode__close {
 	position: relative;
 	display: none;
@@ -287,6 +238,56 @@
 		transition: left 0.2s ease;
 	}
 }
+// .upload_image__close {
+// 	display: none;
+// 	margin-bottom: 25px;
+// 	border-radius: 10%;
+// 	cursor: pointer;
+// 	&:hover {
+// 		filter: brightness(80%);
+// 	}
+// 	&:active {
+// 		filter: brightness(60%);
+// 	}
+// }
+.upload_image {
+	position: relative;
+	top: 0px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	height: 172px;
+	width: 100%;
+	margin-bottom: 30px;
+	border: 2px dashed var(--basic);
+	border-radius: 15px;
+	cursor: pointer;
+	overflow: hidden;
+	transition: all 0.3s;
+	img {
+		border-radius: 50%;
+		transition: all 0.3s;
+	}
+	p {
+		white-space: nowrap;
+		color: var(--basic);
+		transition: all 0.3s;
+		&:nth-child(3) {
+			margin-top: 3px;
+			font-size: 12px;
+		}
+		&:nth-child(2) {
+			margin-top: 18px;
+		}
+	}
+	&:hover {
+		background-color: var(--block-hover_color);
+	}
+	&:active {
+		background-color: var(--block-active_color);
+	}
+}
 .sidebar.close {
 	$close: true;
 	width: 96px;
@@ -318,14 +319,28 @@
 		}
 	}
 	.upload_image {
-		display: none;
-		border: none;
-		p {
-			display: none;
+		align-items: center;
+		justify-content: right;
+		flex-direction: column;		
+		top: -20px;
+		border: 2px dashed transparent;
+		height: 56px;
+		margin-bottom: 0px;
+		&:hover {
+			background-color: transparent;
 		}
-	}
-	.upload_image__close {
-		display: block;
+		&:active {
+			background-color: transparent;
+		}
+		p {
+			opacity: 0;
+		}
+		&:hover img{
+			filter: brightness(80%);
+		}
+		&:active img{
+			filter: brightness(60%);
+		}
 	}
 	.color-mode {
 		display: none;
