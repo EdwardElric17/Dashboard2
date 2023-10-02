@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+
+	<link rel="stylesheet" href="./styles/css/main.css">
+	<title>Dashboard</title>
+</head>
+<body>
+	<img class="light" src="/src/assets/images/Light Mode bg.png">
+	<img class="dark" src="/src/assets/images/Dark Mode bg.png">
+	<section class="container">
+		<aside class="sidebar">
+
+			<div class="sidebar-toggle">
+				<i class="uil uil-angle-left"></i>
+			</div>
+
+			<div class="top_part">
+
+				<div class="logo">
+					<img class="brand-logo_light" src="/src/assets/images/brand-logo_light.png">
+					<img class="brand-logo_dark" src="/src/assets/images/brand-logo_dark.png">
+				</div>
+
+				<nav class="nav">
+					<a href="#" class="nav-elem home">
+						<i class="uil uil-home"></i>
+						<div class="nav-name">
+							<span class="nav-text">Dashboard</span>
+						</div>
+					</a>
+					<a href="#" class="nav-elem audience">
+						<i class="uil uil-users-alt"></i>
+						<div class="nav-name">
+							<span class="nav-text">Audience</span>
+						</div>
+					</a>
+					<a href="#" class="nav-elem post">
+						<i class="uil uil-file-info-alt"></i>
+						<div class="nav-name">
+							<span class="nav-text">Posts</span>
+							<div class="nav-name_rp">
+								<div class="post_count">4</div>
+							</div>
+						</div>
+					</a>
+					<a href="#" class="nav-elem schedules">
+						<i class="uil uil-schedule"></i>
+						<div class="nav-name">
+							<span class="nav-text">Schedules</span>
+							<div class="nav-name_rp">
+								<i class="uil uil-plus-circle schedules_plus"></i>
+								<div class="schedules_count">8</div>
+							</div>
+						</div>
+					</a>
+
+					<a href="#" class="nav-elem income">
+						<i class="uil uil-chart-pie-alt"></i>
+						<div class="nav-name">
+							<span class="nav-text">Income</span>
+							<div class="nav-name_rp drop-icon">
+								<i style="font-size: 35px; pointer-events: none;" class="uil uil-angle-down"></i>
+							</div>
+						</div>
+					</a>
+					<div class="drop-list dl_income close">
+						<a href="#" class="nav-elem earning">
+							Earning
+						</a>
+						<a href="#" class="nav-elem refunds">
+							Refunds
+						</a>
+						<a href="#" class="nav-elem declines">
+							Declines
+						</a>
+						<a href="#" class="nav-elem payouts">
+							Payouts
+						</a>
+					</div>
+					<a href="#" class="nav-elem promote">
+						<i class="uil uil-comparison"></i>
+						<div class="nav-name">
+							<span class="nav-text">Promote</span>
+							<div class="nav-name_rp drop-icon">
+								<i style="font-size: 35px; pointer-events: none;" class="uil uil-angle-down"></i>
+							</div>
+						</div>
+					</a>
+					<div class="drop-list dl_promote close">
+						<a href="#" class="nav-elem earning">
+							Earning
+						</a>
+						<a href="#" class="nav-elem refunds">
+							Refunds
+						</a>
+						<a href="#" class="nav-elem declines">
+							Declines
+						</a>
+						<a href="#" class="nav-elem payouts">
+							Payouts
+						</a>
+					</div>
+				</nav>
+			</div>
+
+			<div class="bottom_part">
+
+				<div class="upload_image">
+					<img src="/src/assets/icons/add-icon.jpg">
+					<p>Upload new image</p>
+					<p>Drag and drop</p>
+				</div>
+				<img class="upload_image__close" src="/src/assets/icons/add-icon.jpg">
+
+				<div class="color-mode">
+					<div class="light-mode">
+						<i class="uil uil-sun"></i>
+						<span>Light</span>
+					</div>
+					<div class="dark-mode">
+						<i class="uil uil-moon"></i>
+						<span>Dark</span>
+					</div>
+					<div class="switch"></div>
+				</div>
+
+				<div class="color-mode__close">
+					<div class="light-mode">
+						<i class="uil uil-sun"></i>
+					</div>
+					<div class="dark-mode">
+						<i class="uil uil-moon"></i>
+					</div>
+					<div class="switch__close"></div>
+				</div>
+			</div>
+
+		</aside>
+		<header class="header">
+			<div class="top-bar">
+				<div class="comment">
+					<i class="uil uil-comment-dots"></i>
+				</div>
+				<div class="bell">
+					<i class="uil uil-bell"></i>
+				</div>
+				<div class="profile">
+					<div class="avatar">
+						<img src="/src/assets/images/avatar.png">
+					</div>
+					
+					<div class="drop-box close">
+						<div class="profile-settings">
+							Profile Settings
+						</div>
+						<div class="view-profile">
+							View Profile
+						</div>
+						<hr>
+						<div class="explore-creators">
+							<i class="uil uil-users-alt"></i>
+							<span>Explore Creators</span>
+						</div>	
+						<div class="manage-membership">
+							<i class="uil uil-heart"></i>
+							<span>Manage Membership</span>
+						</div>
+						<div class="invite-creators">
+							<i class="uil uil-navigator"></i>
+							<span>Invite Creators</span>
+						</div>
+						<hr>
+						<div class="logout">
+							Logout
+						</div>	
+					</div>
+				</div>
+			</div>
+		</header>
+		<main class="main">
+			<h1>Dashboard</h1>
+			<div class="dash-content">
+				<div class="boxes">
+					<div class="box box1">
+						<div class="box-icon">
+							<i class="uil uil-users-alt"></i>
+						</div>
+						<div class="box-info">
+							<div class="box-count">8,282</div>
+							<div class="box-title">New Users</div>
+						</div>
+					</div>
+					<div class="box box2">
+						<div class="box-icon">
+							<i class="uil uil-shopping-cart"></i>
+						</div>
+						<div class="box-info">
+							<div class="box-count">200,254</div>
+							<div class="box-title">Total Orders</div>
+						</div>
+					</div>
+					<div class="box box3">
+						<div class="box-icon">
+							<i class="uil uil-shopping-bag"></i>
+						</div>
+						<div class="box-info">
+							<div class="box-count">215,349</div>
+							<div class="box-title">Available Products</div>
+						</div>
+					</div>
+				</div>
+				<div class="activity-data">
+					<div class="data-names">
+						<span>NAME</span>
+						<div class="name-value">
+							<div class="avatar">
+								<img src="/src/assets/images/avatar.png">
+							</div>
+							<div class="title">
+								<div class="name">Mihail Karetnikov</div>
+								<div class="email">mihail.karetnikov@gmail.com</div>
+							</div>
+						</div>
+						<div class="name-value">
+							<div class="avatar">
+								<img src="/src/assets/images/avatar.png">
+							</div>
+							<div class="title">
+								<div class="name">Mihail Karetnikov</div>
+								<div class="email">mihail.karetnikov@gmail.com</div>
+							</div>
+						</div>
+						<div class="name-value">
+							<div class="avatar">
+								<img src="/src/assets/images/avatar.png">
+							</div>
+							<div class="title">
+								<div class="name">Mihail Karetnikov</div>
+								<div class="email">mihail.karetnikov@gmail.com</div>
+							</div>
+						</div>
+						<div class="name-value">
+							<div class="avatar">
+								<img src="/src/assets/images/avatar.png">
+							</div>
+							<div class="title">
+								<div class="name">Mihail Karetnikov</div>
+								<div class="email">mihail.karetnikov@gmail.com</div>
+							</div>
+						</div>
+						<div class="name-value">
+							<div class="avatar">
+								<img src="/src/assets/images/avatar.png">
+							</div>
+							<div class="title">
+								<div class="name">Mihail Karetnikov</div>
+								<div class="email">mihail.karetnikov@gmail.com</div>
+							</div>
+						</div>
+						<div class="name-value">
+							<div class="avatar">
+								<img src="/src/assets/images/avatar.png">
+							</div>
+							<div class="title">
+								<div class="name">Mihail Karetnikov</div>
+								<div class="email">mihail.karetnikov@gmail.com</div>
+							</div>
+						</div>
+						<div class="name-value">
+							<div class="avatar">
+								<img src="/src/assets/images/avatar.png">
+							</div>
+							<div class="title">
+								<div class="name">Mihail Karetnikov</div>
+								<div class="email">mihail.karetnikov@gmail.com</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+	</section>
+
+	<script src="/src/js/sidebar.js"></script>
+</body>
+</html>

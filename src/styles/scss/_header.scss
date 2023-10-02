@@ -1,0 +1,115 @@
+.header {
+	position: relative;
+	left: 280px;
+	top: 0;
+	display: flex;
+	justify-content: right;
+	align-items: center;
+	max-width: calc(100% - 280px);
+	height: 100px;
+	padding: 40px;
+	background-color: var(--section_color);
+	// backdrop-filter: blur(2px);
+	border-radius: 0px 24px 0px 0px;
+	border-bottom: 2px solid var(--section-border_color);
+	z-index: -1;
+	transition: all 0.3s;
+}
+.top-bar {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 20px;
+	color: var(--basic);
+	.comment {
+		cursor: pointer;
+		i {
+			font-size: 22px;
+			pointer-events: none;
+		}
+		&:hover {
+			filter: brightness(0.6);
+		}
+	}
+	.bell {
+		position: relative;
+		cursor: pointer;
+		i {
+			font-size: 24px;
+			pointer-events: none;
+			z-index: 0;
+		}
+		&:hover {
+			filter: brightness(0.6);
+		}
+	}
+	.bell::before {
+		content: '';
+		position: absolute;
+		left: 14px;
+		top: 6px;
+		width: 6px;
+		height: 6px;
+		border-radius: 50%;
+		background-color: var(--purple);
+		z-index: 12;
+	}
+	.profile {
+		position: relative;
+		z-index: 3;
+		.avatar {
+			display: flex;
+			justify-content: center;
+			width: 35px;
+			height: 35px;
+			border-radius: 50%;
+			background-color: var(--basic);
+			cursor: pointer;
+			transition: all 0.1s;
+			overflow: hidden;
+			&:hover {
+				background-color: rgba($color: #ffffff, $alpha: 0.6);
+			}
+		}
+	}
+	.drop-box {
+		position: absolute;
+		top: 45px;
+		left: -200px;
+		display: flex;
+		flex-direction: column;
+		padding: 20px;
+		background-color: var(--section_color);
+		backdrop-filter: blur(1px);
+		border-radius: 12px;
+		z-index: 2;
+		div {
+			display: flex;
+			padding: 10px;
+			border-radius: 3px;
+			cursor: pointer;
+			&:hover {
+				background-color: var(--block-hover_color);
+			}
+			i {
+				margin-right: 10px;
+				font-size: 18px;
+			}
+			span {
+				white-space: nowrap;
+			}
+		}
+		hr {
+			border: none;
+			border-bottom: 2px solid var(--section-border_color);
+			margin: 10px 0px;
+		}
+	}
+}
+.drop-box.close {
+	display: none !important;
+}
+.header.close {
+	left: 96px;
+	max-width: calc(100% - 96px);
+}

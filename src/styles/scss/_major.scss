@@ -1,0 +1,117 @@
+main {
+	position: relative;
+	left: 280px;
+	max-width: calc(100% - 280px);
+	padding: 40px;
+	transition: all 0.3s;
+	z-index: -2;
+	overflow: hidden;
+	h1 {
+		color: #fff;
+	}
+}
+.dash-content {
+	margin-top: 30px;
+	.boxes {
+		display: flex;
+		align-items: center;
+		flex-wrap: wrap;
+		gap: 10px;
+	}
+	.box {
+		display: flex;
+		align-items: center;
+		flex: 1;
+		padding: 50px 30px;
+		background-color: var(--section_color);
+		backdrop-filter: blur(2px);
+		border-radius: 12px;
+		color: #fff;
+		.box-icon {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			width: 46px;
+			height: 46px;
+			border-radius: 50%;
+			margin-right: 20px;
+			font-size: 40px;
+		}
+		&.box1 .box-icon  {
+			background-color: var(--purple) !important;
+		}
+		&.box2 .box-icon  {
+			background-color: var(--blue) !important;
+		}
+		&.box3 .box-icon  {
+			background-color: var(--pink) !important;
+		}
+		.box-info {
+			display: flex;
+			flex-direction: column;
+			gap: 5px;
+			white-space: nowrap;
+			.box-count {
+				font-size: 22px;
+				color: #fff;
+			}
+			.box-title {
+				font-size: 14px;
+				color: var(--grey-text);
+			}
+		}
+	}		
+}
+.activity-data {
+	display: flex;
+	flex-direction: column;
+	// padding: 20px 15px;
+	margin-top: 10px;
+	background-color: var(--section_color);
+	backdrop-filter: blur(2px);
+	border-radius: 12px;
+	color: #fff;
+	// overflow-y: scroll;
+	.data-names {
+		display: flex;
+		flex-direction: column;
+		// gap: 10px;
+		span {
+			margin-bottom: 2px;
+			padding: 15px 10px;
+		}
+		.name-value {
+			display: flex;
+			align-items: center;
+			gap: 10px;
+			padding: 10px 15px;
+			border-top: 2px solid var(--section-border_color);
+			.avatar {
+				display: flex;
+				justify-content: center;
+				width: 36px;
+				height: 36px;
+				background-color: #fff;
+				border-radius: 50%;
+				overflow: hidden;
+			}
+			.title {
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				gap: 3px;
+				.name {
+					font-size: 14px;
+				}
+				.email {
+					color: var(--grey-text);
+					font-size: 12px;
+				}
+			}
+		}
+	}
+}
+main.close {
+	max-width: calc(100% - 73px);
+	left: 96px !important;
+}

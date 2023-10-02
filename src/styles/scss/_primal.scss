@@ -1,0 +1,96 @@
+body {
+	height: 100vh;
+	width: 100%;
+	padding: 40px;
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+	overflow: hidden;
+	.container {
+		width: 100%;
+		height: 100%;
+		background: rgba($color: #ffffff, $alpha: 0.08);
+		backdrop-filter: blur(4px);
+		border-radius: 24px;
+		overflow: hidden;
+	}
+}
+:root {
+	--basic: #fff;
+	--section_color: rgba(255, 255, 255, 0.05);
+	--section-border_color: rgba(255, 255, 255, 0.2);
+	--minor: #000;
+	--block-hover_color: rgba(0, 0, 0, 0.2);
+	--block-active_color: rgba(0, 0, 0, 0.4);
+	--purple: #9451E9;
+	--blue: #5081FF;
+	--pink: #fd5f91;
+	--grey-text: #ababab;
+}
+.dark {
+	--section_color: rgba(0, 0, 0, 0.6);
+	--section-border_color: rgba(255, 255, 255, 0.1);
+	--block-hover_color: rgba(0, 0, 0, 0.4);
+	--block-active_color: rgba(0, 0, 0, 0.8);
+}
+body.dark {
+	img.light {
+		display: none;
+	}
+	img.dark {
+		display: block;
+	}
+	.logo {
+		.brand-logo_light {
+			display: none;
+		}
+		.brand-logo_dark {
+			display: block;
+		}
+	}
+	.sidebar-toggle {
+		background-color: var(--minor);
+		i {
+			color: var(--basic);
+		}
+	}
+	.light-mode {
+		color: var(--basic);
+	}
+	.switch {
+		background-color: var(--minor);
+		left: 117px;
+	}
+	.switch__close {
+		background-color: var(--minor);
+		left: 30px;
+	}
+	a.nav-elem {
+		&:hover {
+			background-color: var(--block-hover_color);
+		}
+		&:active {
+			background-color: var(--block-active_color);
+		}
+	}
+}
+img.light {
+	position: absolute;
+	left: 0;
+	top: 0;
+	display: block;
+	width: 100%;
+	height: 100%;
+	z-index: -1;
+	object-fit: cover;
+}
+img.dark {
+	position: absolute;
+	left: 0;
+	top: 0;
+	display: none;
+	width: 100%;
+	height: 100%;
+	z-index: -1;
+	object-fit: cover;
+}
