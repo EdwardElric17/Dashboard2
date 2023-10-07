@@ -79,7 +79,7 @@
 			.nav-name_rp {
 				display: flex;
 				align-items: center;
-				gap: 10px;
+				// gap: 10px;
 			}
 		}
 		&:hover {
@@ -238,18 +238,6 @@
 		transition: left 0.2s ease;
 	}
 }
-// .upload_image__close {
-// 	display: none;
-// 	margin-bottom: 25px;
-// 	border-radius: 10%;
-// 	cursor: pointer;
-// 	&:hover {
-// 		filter: brightness(80%);
-// 	}
-// 	&:active {
-// 		filter: brightness(60%);
-// 	}
-// }
 .upload_image {
 	position: relative;
 	top: 0px;
@@ -265,6 +253,12 @@
 	cursor: pointer;
 	overflow: hidden;
 	transition: all 0.3s;
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+	input {
+		display: none;
+	}
 	img {
 		border-radius: 50%;
 		transition: all 0.3s;
@@ -303,6 +297,9 @@
 			justify-content: left;
 			gap: 0;
 		}
+		// .nav-elem {
+		// 	padding-left: 0px;
+		// }
 	}
 	@if $close == true {
 		.nav-name {
@@ -310,13 +307,18 @@
 			pointer-events: none;
 		}
 	}
+	.nav-elem_container {
+		position: relative;
+	}
 	.drop-list {
-		a {
-			background-color: transparent;
-		}
-		a:hover {
-			color: rgba(255, 255, 255, 0.5);
-		}
+		position: absolute;
+		width: 270px;
+		padding: 15px 20px 10px 45px;
+		background-color: var(--drop-list_color);
+		box-shadow: 0px 0px 22px 5px rgba(5, 5, 5, 0.34);
+		border-radius: 12px;
+		backdrop-filter: blur(30px);
+		z-index: 2;
 	}
 	.upload_image {
 		align-items: center;
@@ -326,6 +328,7 @@
 		border: 2px dashed transparent;
 		height: 56px;
 		margin-bottom: 0px;
+		background-image: none !important;
 		&:hover {
 			background-color: transparent;
 		}

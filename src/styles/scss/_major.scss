@@ -148,6 +148,7 @@ main {
 		}
 		.data-status {
 			display: flex;
+			align-items: center;
 			flex-direction: column;
 			flex: 1;
 			span {
@@ -156,11 +157,13 @@ main {
 			}
 			.name-value {
 				display: flex;
+				justify-content: center;
 				align-items: center;
 				gap: 10px;
 				height: 55px;
+				width: 100%;
 				padding: 10px;
-				padding-right: 40px;
+				// padding-right: 40px;
 				border-top: 2px solid var(--section-border_color);
 				.status {
 					padding: 5px 10px;

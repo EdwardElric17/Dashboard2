@@ -22,7 +22,8 @@ body {
 	--minor: #000;
 	--block-hover_color: rgba(0, 0, 0, 0.2);
 	--block-active_color: rgba(0, 0, 0, 0.4);
-	--drop-box_color: rgba(0, 0, 0, 0.85);
+	--drop-box_color: rgba(25, 22, 28, 0.95);
+	--drop-list_color: rgba(25, 22, 28, 0.95);
 	--purple: #9451E9;
 	--blue: #5081FF;
 	--pink: #fd5f91;
@@ -35,6 +36,8 @@ body {
 	--section-border_color: rgba(255, 255, 255, 0.1);
 	--block-hover_color: rgba(0, 0, 0, 0.4);
 	--block-active_color: rgba(0, 0, 0, 0.8);
+	--drop-box_color: rgba(0, 0, 0, 0.85);
+	--drop-list_color: rgba(0, 0, 0, 0.85);
 }
 body.dark {
 	img.light {
